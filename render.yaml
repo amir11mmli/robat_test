@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: robat_test
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      - key: CHANNEL_ID
+        value: -1001234567890
+      - key: PHOTO_FILE_ID
+        value: AgACAgQAAxkBAAMAZmVmVmB...
